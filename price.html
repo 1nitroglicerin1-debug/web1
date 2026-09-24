@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Consultex | Прайс-лист</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прайс-лист | Consultex</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="main">
-  <header id="header">
-    <div class="header-row">
+
+  <header class="header">
+    <div class="container header-container">
       <a href="index.html" class="logo-box">
         <div class="logo-icon">
           <svg viewBox="0 0 24 24">
@@ -22,79 +23,72 @@
         </div>
       </a>
       <nav>
-        <ul class="nav">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">О Компании</a></li>
-          <li><a href="catalog.html">Каталог услуг</a></li>
-          <li><a href="price.html" class="current">Прайс-лист</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="about.html" class="nav-link">О Компании</a></li>
+          <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+          <li><a href="price.html" class="nav-link active">Прайс-лист</a></li>
+          <li><a href="contacts.html" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="promo-bar">
-    <div>
-      <h2>Прайс-лист на услуги компании</h2>
-      <p>Фиксированные тарифные планы на проектирование, разработку и администрирование веб-узлов.</p>
-    </div>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-box">
+        <h2 class="hero-title">Тарифные планы и прайс-лист на услуги</h2>
+        <p class="hero-subtitle">Прозрачные фиксированные цены на разработку и администрирование узлов. Категории и популярные позиции выделены цветом.</p>
+      </div>
+    </section>
 
-  <main class="content-wrap" style="grid-template-columns: 1fr;">
-    <section class="main-col">
-      <h2>Тарифные планы и стоимость решений</h2>
-      <p>Различные типы категорий и популярные тарифы выделены цветом по требованиям лабораторной работы.</p>
-
+    <div class="table-wrapper">
       <table class="price-table">
         <thead>
           <tr>
             <th>Категория / Наименование услуги</th>
-            <th>Срок реализации</th>
+            <th>Срок выполнения</th>
             <th>Стоимость</th>
           </tr>
         </thead>
         <tbody>
           <tr class="cat-row">
-            <td colspan="3">1. Разработка Web-узлов и сервисов</td>
+            <td colspan="3">1. Разработка Web-узлов и интерфейсов</td>
           </tr>
           <tr>
-            <td>Разработка статического корпоративного сайта (до 5 страниц)</td>
+            <td>Разработка статического корпоративного узла (до 5 страниц)</td>
             <td>5 рабочих дней</td>
             <td>15 000 ₽</td>
           </tr>
-          <tr class="special-row">
-            <td>Интерактивный портал со сложной логикой (Fullstack) — Хит продаж</td>
+          <tr class="hit-row">
+            <td>Интерактивный полнофункциональный портал (Fullstack) <span class="badge">ХИТ</span></td>
             <td>20 рабочих дней</td>
             <td>55 000 ₽</td>
           </tr>
           <tr class="cat-row">
-            <td colspan="3">2. Администрирование серверов и хостинга</td>
+            <td colspan="3">2. Серверное администрирование и хостинг</td>
           </tr>
           <tr>
-            <td>Настройка веб-сервера (Linux, SSH, Nginx/Apache, Let's Encrypt)</td>
+            <td>Первичная настройка VDS / VPS (Linux, SSH, Nginx, Let's Encrypt)</td>
             <td>1 рабочий день</td>
             <td>7 500 ₽</td>
           </tr>
-          <tr class="special-row">
-            <td>Комплексная оптимизация PageSpeed Insights (Score 90+)</td>
+          <tr class="hit-row">
+            <td>Комплексная оптимизация PageSpeed Insights (Score 90+) <span class="badge">РЕКОМЕНДУЕМ</span></td>
             <td>3 рабочих дня</td>
             <td>12 000 ₽</td>
           </tr>
         </tbody>
       </table>
-    </section>
+    </div>
   </main>
 
-  <footer id="footer">
-    <p>© 2026 Consultex. Все права защищены.</p>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="about.html">О Компании</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="price.html">Прайс-лист</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 Consultex. Все права защищены.</p>
+      <p>Статический адаптивный узел</p>
+    </div>
   </footer>
-</div>
+
 </body>
 </html>
