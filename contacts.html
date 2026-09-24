@@ -2,13 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Consultex | Контакты</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | Consultex</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="main">
-  <header id="header">
-    <div class="header-row">
+
+  <header class="header">
+    <div class="container header-container">
       <a href="index.html" class="logo-box">
         <div class="logo-icon">
           <svg viewBox="0 0 24 24">
@@ -22,60 +23,55 @@
         </div>
       </a>
       <nav>
-        <ul class="nav">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about.html">О Компании</a></li>
-          <li><a href="catalog.html">Каталог услуг</a></li>
-          <li><a href="price.html">Прайс-лист</a></li>
-          <li><a href="contacts.html" class="current">Контакты</a></li>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="about.html" class="nav-link">О Компании</a></li>
+          <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+          <li><a href="price.html" class="nav-link">Прайс-лист</a></li>
+          <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="promo-bar">
-    <div>
-      <h2>Контактная информация</h2>
-      <p>Свяжитесь с нами любым удобным способом или посетите наш инженерный офис в Брянске.</p>
-    </div>
-  </section>
-
-  <main class="content-wrap">
-    <section class="main-col">
-      <h2>Схема проезда (Интерактивная карта)</h2>
-      <p style="margin-bottom: 8px;">Фактический адрес: г. Брянск, бульвар 50 лет Октября, д. 7 (БГТУ)</p>
-      
-      <!-- Виджет Яндекс.Карт по заданию методички -->
-      <div class="map-box">
-        <iframe 
-          src="https://yandex.ru/map-widget/v1/?ll=34.305602%2C53.303967&z=16&pt=34.305602,53.303967,pm2rdm" 
-          width="100%" 
-          height="100%" 
-          frameborder="0" 
-          allowfullscreen="true">
-        </iframe>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-box">
+        <h2 class="hero-title">Контактная информация</h2>
+        <p class="hero-subtitle">Свяжитесь с нашей инженерной командой или посетите офис в Брянске.</p>
       </div>
     </section>
 
-    <aside class="side-col">
-      <h2>Прямая связь</h2>
-      <p><strong>Телефон:</strong> +7 (4832) 74-00-00</p>
-      <p><strong>E-mail:</strong> info@consultex-bgtu.ru</p>
-      <p><strong>Время работы:</strong> Пн–Пт с 09:00 до 18:00</p>
-      <p style="margin-top: 15px;"><strong>Дежурная техподдержка:</strong> 24/7/365</p>
-    </aside>
+    <div class="contacts-grid">
+      <div class="card">
+        <h3 class="card-title">Прямая связь</h3>
+        <p class="card-desc" style="margin-bottom: 12px;"><strong>Адрес:</strong> г. Брянск, бульвар 50 лет Октября, 7 (БГТУ)</p>
+        <p class="card-desc" style="margin-bottom: 12px;"><strong>Телефон:</strong> +7 (4832) 74-00-00</p>
+        <p class="card-desc" style="margin-bottom: 12px;"><strong>E-mail:</strong> support@consultex-bgtu.ru</p>
+        <p class="card-desc"><strong>Режим работы:</strong> Пн–Пт с 09:00 до 18:00</p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Схема проезда (Интерактивная карта)</h3>
+        <div class="map-frame">
+          <iframe 
+            src="https://yandex.ru/map-widget/v1/?ll=34.305602%2C53.303967&z=16&pt=34.305602,53.303967,pm2rdm" 
+            width="100%" 
+            height="100%" 
+            frameborder="0" 
+            allowfullscreen="true">
+          </iframe>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer id="footer">
-    <p>© 2026 Consultex. Все права защищены.</p>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="about.html">О Компании</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="price.html">Прайс-лист</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2026 Consultex. Все права защищены.</p>
+      <p>Статический адаптивный узел</p>
+    </div>
   </footer>
-</div>
+
 </body>
 </html>
