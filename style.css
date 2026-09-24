@@ -1,4 +1,3 @@
-/* Простая приземлённая палитра: классический серый + корпоративный синий */
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +21,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Главный блок сайта без градиентов и теней */
 #wrap {
   width: 100%;
   max-width: 980px;
@@ -50,11 +48,23 @@ a:hover {
   text-decoration: none;
 }
 
-.logo-area img {
-  width: 48px;
-  height: 48px;
-  border: 1px solid #ffffff;
-  background: #ffffff;
+.logo-icon-box {
+  width: 46px;
+  height: 46px;
+  background: #1a3350;
+  border: 2px solid #ffb84d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-icon-box svg {
+  width: 30px;
+  height: 30px;
+  stroke: #ffb84d;
+  stroke-width: 2;
+  fill: none;
 }
 
 .logo-title {
@@ -72,7 +82,7 @@ a:hover {
   font-size: 11px;
 }
 
-/* Меню без анимаций */
+/* Меню */
 .main-nav {
   display: flex;
   list-style: none;
@@ -101,7 +111,7 @@ a:hover {
   border-color: #c47500;
 }
 
-/* Баннер / Реклама */
+/* Баннер */
 .promo-banner {
   background: #d4e3f3;
   border-bottom: 1px solid #b2c8de;
@@ -123,11 +133,29 @@ a:hover {
   color: #334e6b;
 }
 
-.promo-gif {
+.promo-badge {
   width: 90px;
   height: 90px;
-  object-fit: cover;
-  border: 2px dashed #2b4a6f;
+  background: #2b4a6f;
+  border: 2px dashed #f29100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.promo-badge svg {
+  width: 36px;
+  height: 36px;
+  stroke: #ffb84d;
+  stroke-width: 2;
+  fill: none;
+  margin-bottom: 4px;
 }
 
 /* Контент */
@@ -177,11 +205,12 @@ a:hover {
 
 .item-card img {
   width: 100%;
-  height: 140px;
+  height: 160px;
   object-fit: cover;
   border: 1px solid #bcc8d4;
   margin-bottom: 8px;
   background: #eee;
+  display: block;
 }
 
 .item-card h4 {
@@ -195,7 +224,7 @@ a:hover {
   font-size: 11px;
 }
 
-/* Прайс-лист таблица */
+/* Таблица прайс-листа */
 .table-box {
   width: 100%;
   border-collapse: collapse;
@@ -231,6 +260,25 @@ a:hover {
   height: 300px;
 }
 
+/* Мем-карточки в сайдбаре */
+.meme-card {
+  background: #2b4a6f;
+  color: #ffffff;
+  padding: 16px;
+  text-align: center;
+  border: 2px solid #f29100;
+}
+
+.meme-card svg {
+  width: 48px;
+  height: 48px;
+  stroke: #ffb84d;
+  stroke-width: 2;
+  fill: none;
+  margin: 0 auto 8px;
+  display: block;
+}
+
 /* Подвал */
 #footer {
   background: #2b4a6f;
@@ -249,7 +297,7 @@ a:hover {
   color: #ffffff;
 }
 
-/* Адаптив для мобилок и старых моников */
+/* Адаптивность */
 @media (max-width: 768px) {
   .grid-cols, .catalog-list {
     grid-template-columns: 1fr;
