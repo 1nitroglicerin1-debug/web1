@@ -3,67 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IT-Solutions Lab | Проектирование и веб-узлы</title>
+  <title>Магазин «Воздухан-Трейд» — Главная</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="wrap">
+  
+  <div id="header">
+    <a href="index.html" class="logo-area">
+      <!-- Гифка-логотип с котом и вентилятором -->
+      <img src="https://media.tenor.com/On7kvXhzml4AAAAj/cat-spinning.gif" alt="Логотип">
+      <div>
+        <div class="logo-title">ВОЗДУХАН<span>.РУ</span></div>
+        <div class="logo-tagline">Первый сертифицированный поставщик воздуха и выдувов</div>
+      </div>
+    </a>
+    <ul class="main-nav">
+      <li><a href="index.html" class="active">Главная</a></li>
+      <li><a href="about.html">О Конторе</a></li>
+      <li><a href="catalog.html">Товары</a></li>
+      <li><a href="price.html">Прайс-лист</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </div>
 
-  <header class="header">
-    <div class="container header-container">
-      <a href="index.html" class="logo-box">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24">
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
-          </svg>
-        </div>
-        <div class="logo-text">
-          <h1>Consul<span>tex</span></h1>
-          <p>Enterprise IT Solutions & Web Systems</p>
-        </div>
-      </a>
-      <nav>
-        <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link active">Главная</a></li>
-          <li><a href="about.html" class="nav-link">О Компании</a></li>
-          <li><a href="catalog.html" class="nav-link">Каталог</a></li>
-          <li><a href="price.html" class="nav-link">Прайс-лист</a></li>
-          <li><a href="contacts.html" class="nav-link">Контакты</a></li>
-        </ul>
-      </nav>
+  <div class="promo-banner">
+    <div class="promo-text">
+      <h2>Хватит сотрясать воздух бесплатно — заказывай профессиональный!</h2>
+      <p>Специализированная поставка бытовых и промышленных воздуходувок, консервированного воздуха с партизанской поляны и персональных вентиляторов.</p>
     </div>
-  </header>
+    <!-- Мемная гифка -->
+    <img class="promo-gif" src="https://media.tenor.com/PZz_M684eIEAAAAM/wind-dog.gif" alt="Ветрено">
+  </div>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-box">
-        <h2 class="hero-title">Высоконагруженные веб-узлы и IT-инфраструктура нового поколения</h2>
-        <p class="hero-subtitle">Проектируем, развёртываем и поддерживаем масштабируемые веб-сервисы, базы данных и серверные кластеры с гарантией безотказной работы 99.98%.</p>
+  <div class="content">
+    <div class="grid-cols">
+      <div>
+        <h2>Почему нормальные пацаны берут у нас?</h2>
+        <div class="info-block">
+          <h3>Чистый выдув без шума и пыли</h3>
+          <p>Наши компрессоры дуют со скоростью 320 км/ч. Сдувает кошек, опавшие листья, долги по учёбе и осеннюю тоску.</p>
+        </div>
+        <div class="info-block">
+          <h3>Гарантия качества по ГОСТу</h3>
+          <p>Каждый баллон накачан вручную на свежем воздухе в Брянском лесу студентами специальности ПО.</p>
+        </div>
+        <div class="info-block">
+          <h3>Акции недели</h3>
+          <p>При покупке воздуходувки «Турбо-Шайтан 3000» пачка сухариков и наклейка на системник в подарок!</p>
+        </div>
       </div>
-    </section>
 
-    <section class="grid-3">
-      <div class="card">
-        <h3 class="card-title">Веб-разработка</h3>
-        <p class="card-desc">Создание адаптивных и семантичных веб-сервисов с высокими баллами PageSpeed и строгой архитектурой.</p>
+      <div>
+        <h2>Мнение эксперта</h2>
+        <div class="info-block" style="text-align: center;">
+          <img src="https://media.tenor.com/2l9Aic7NnwgAAAAM/cat-breathe.gif" style="width: 100%; height: 120px; object-fit: cover;" alt="Дышит">
+          <p style="margin-top: 8px; font-weight: bold;">«Вдохнул нашего воздуха — сдал сессию без хвостов!»</p>
+          <p style="font-size: 11px; color: #666;">(с) Главный инженер завода им. Воздуха</p>
+        </div>
       </div>
-      <div class="card">
-        <h3 class="card-title">DevOps & Системное администрирование</h3>
-        <p class="card-desc">Конфигурация серверов Nginx и Apache, выпуск TLS-сертификатов, управление маршрутизацией и DNS.</p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Сетевая безопасность</h3>
-        <p class="card-desc">Защита от DDoS-атак, аудит журнала системных логов, разграничение прав доступа и резервное копирование.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-container">
-      <p>© 2026 Consultex. Лабораторная работа №1 (БГТУ).</p>
-      <p>Статический адаптивный узел</p>
     </div>
-  </footer>
+  </div>
 
+  <div id="footer">
+    <div>© 2026 Магазин «Воздухан-Трейд». Лабораторная №1 (БГТУ).</div>
+    <div>Работаем без перекуров</div>
+  </div>
+
+</div>
 </body>
 </html>
